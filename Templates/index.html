@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>
+            iris app
+        </title>
+
+    </head>
+    <body>
+        <h1>iris flower prediction</h1>
+        <form action="{{url_for('prediction')}}" method="post">
+            <label>sepel_length</label>
+            <label >sepel_width</label>
+            <label >petel_length</label>
+            <label >petel_width</label>
+            <input type="number" name="sepel_length">
+            <input type="number" name="sepel_width">
+            <input type="number" name="petel_length">
+            <input type="number" name="petel_width">
+            <button type="submit">predict</button>
+        </form>
+        <p>{{prediction_text}}</p>
+
+    </body>
+</html>
